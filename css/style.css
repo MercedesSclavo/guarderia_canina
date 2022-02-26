@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Signika Negative', sans-serif;
+    background-color: darksalmon;
+    background-image: radial-gradient(rgb(252, 182, 159), antiquewhite);
+}
+
+.header {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+    padding-top: 10px;
+    letter-spacing: 15px;
+}
+
+.header__titulo {
+    text-align: center;
+}
+
+.nav {
+    background-color: antiquewhite;
+    word-spacing: 15px;
+}
+
+.nav__items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.nav__links {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: antiquewhite;
+    position:static;
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__search {
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+}
+
+/*NOSOTROS*/
+/*NOSOTROS empleados*/
+.subtitulo {
+    text-align: center;
+    margin: 2%;
+}
+.empleados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.foto__carnet {
+    border-radius: 20%;
+    height: 400px;
+}
+
+.foto__boton {
+    font-weight: bold;
+    color: antiquewhite;
+    text-align: center;
+    display: block;
+    border: 2px solid black;
+    background-color: black;
+    transition: all 1s;
+    
+}
+
+.foto__boton:hover {
+    background-color: gray;
+}
+
+.otroSubtitulo {
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*NOSOTROS grid link*/
+.link {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items: center;
+}
+
+/*NOSOTROS otros*/
+.link__empresa {
+    border-style: dotted;
+    padding: 10px;
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+}
+
+/*grid*/
+.grid-main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    justify-items: center;
+}
+
+.grid-main p {
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-fotos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid-fotos img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover; 
+}
+
+/*CONTACTO*/
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5%;
+}
+
+/*SERVICIOS*/
+.servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin: 60px;
+}
+ 
+.texto {
+    border: 2px solid;
+    border-color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+/*INSTALACIONES*/
+.instalaciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+
+.foto__titulo {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.foto__foto {
+    border-radius: 50%;
+}
