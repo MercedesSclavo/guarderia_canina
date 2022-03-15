@@ -309,4 +309,16 @@ body {
         row-gap: 10px;
         justify-items: center;
     }
+
+    .link {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 100px;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-items: center;
+    }
+
+
 }
