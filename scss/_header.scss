@@ -1,0 +1,13 @@
+.header {
+    background-color: antiquewhite;
+    align-items: center;
+    height: auto;
+    letter-spacing: 10px;
+    .header__titulo {
+        text-align: center;
+        font-size: 5vw;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        padding-top: 50px;
+    }
+}

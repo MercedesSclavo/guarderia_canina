@@ -69,14 +69,13 @@ body {
     border-width: 1px;
     margin: 2px;
     padding: 2px;
-    
 }
+
 .nav__links {
     text-decoration: none;
     font-size: small;
     font-weight: bolder;
     color: white;
-
 }
 
 .main {

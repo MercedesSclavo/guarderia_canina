@@ -1,0 +1,15 @@
+.footer {
+    background-color: antiquewhite;
+    position:static;
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .footer__search {
+        position: absolute;
+        padding: 10px;
+        width: 100%;
+    }
+}
