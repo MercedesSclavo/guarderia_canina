@@ -9,5 +9,11 @@
         color: white;
         text-shadow: 2px 2px 5px black;
         padding-top: 50px;
+        .header__subtitulo {
+            padding: 15px;
+            color: black;
+            text-shadow: 2px 2px 5px white;
+            text-align: center;
+        }
     }
 }
