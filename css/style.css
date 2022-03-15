@@ -12,34 +12,68 @@ body {
     background-image: radial-gradient(rgb(252, 182, 159), antiquewhite);
 }
 
+
+
 .header {
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 15vh;
-    padding-top: 10px;
-    letter-spacing: 15px;
+    height: auto;
+    letter-spacing: 10px;
 }
 
 .header__titulo {
     text-align: center;
+    font-size: 5vw;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    padding-bottom: 20px;
+}
+.header__subtitulo {
+    padding: 15px;
+    color: black;
+    text-shadow: 2px 2px 5px white;
 }
 
 .nav {
-    background-color: antiquewhite;
-    word-spacing: 15px;
+    background-color: antiquewhite; 
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: auto;
+
 }
 
 .nav__items {
-    list-style: none;
     display: flex;
     justify-content: center;
-    padding-bottom: 10px;
+    list-style: none;
+    width: 100%;
+
 }
 
+.nav__link {
+    padding: 5px;
+    text-align: right;
+    border: black solid;
+    background-color: black;
+    border-width: 1px;
+    margin: 2px;
+    padding: 2px;
+    
+}
 .nav__links {
     text-decoration: none;
+    font-size: small;
+    font-weight: bolder;
+    color: white;
+
+}
+
+.main {
+    padding: 5%;
+
 }
 
 .footer {
@@ -63,7 +97,8 @@ body {
 /*NOSOTROS empleados*/
 .subtitulo {
     text-align: center;
-    margin: 2%;
+    margin-top: 5%;
+    position: relative; 
 }
 .empleados {
     display: flex;
@@ -139,12 +174,16 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
+    padding-top: 70px;
+    
 }
 
 .grid-fotos img {
     width: 90%;
     height: 90%;
     object-fit: cover; 
+    border-radius: 8px;
+    border: 2px solid black;
 }
 
 /*CONTACTO*/
@@ -171,6 +210,11 @@ body {
 }
 
 /*INSTALACIONES*/
+.subtitulo {
+    background-color: antiquewhite;
+    color: darksalmon;
+}
+
 .instalaciones {
     display: flex;
     flex-direction: row;
@@ -179,12 +223,44 @@ body {
     margin-bottom: 10%;
 }
 
-
 .foto__titulo {
     text-align: center;
     font-weight: bolder;
 }
 
 .foto__foto {
-    border-radius: 50%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textoInstalaciones {
+    text-align: center;
+    padding: 2%;
+}
+
+
+@media screen and (max-width: 1180px) {
+    .empleados {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 100px;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-items: center;
+    }
+
+    .instalaciones {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 100px;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-items: center;
+
+    }
 }
