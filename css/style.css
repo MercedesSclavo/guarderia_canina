@@ -10,6 +10,8 @@ body {
     font-family: 'Signika Negative', sans-serif;
     background-color: black;
     background-image: radial-gradient(rgb(252, 182, 159), antiquewhite);
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .barra {
@@ -205,15 +207,22 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 50px;
     row-gap: 50px;
-    margin: 60px;
+    margin: 60px;   
 }
  
 .texto {
-    border: 2px solid;
-    border-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
     padding: 5px;
     text-align: center;
+    background-color: antiquewhite;
+    transition: all 1   s;
 }
+
+.texto:hover {
+    background-color: rgb(243, 197, 137);
+}
+
 
 /*INSTALACIONES*/
 .subtitulo {
@@ -248,7 +257,7 @@ body {
 }
 
 
-@media screen and (min-width: 1180px) {
+@media only screen and (max-width: 992px) {
     .empleados {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -267,23 +276,20 @@ body {
         column-gap: 10px;
         row-gap: 10px;
         justify-items: center;
-
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .body {
-        width: 100%;
     }
 
     .grid-main {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
+        width:100%;
         padding: 20px;
-        justify-items: center;
+        justify-items: auto;
     }
+}
 
+
+@media only screen and (max-width: 600px) { 
     .grid-fotos {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
@@ -291,5 +297,16 @@ body {
         column-gap: 10px;
         row-gap: 10px;
         padding-top: 70px;
+        justify-items: center;
+    }
+
+    .empleados {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 100px;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-items: center;
     }
 }
