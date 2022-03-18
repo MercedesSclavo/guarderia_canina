@@ -1,22 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+@import "_generales";
 @import "_header";
 @import "_nav";
 @import "_footer";
+@import "_media";
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.body {
-    font-family: 'Signika Negative', sans-serif;
-    background-color: green;
-    background-image: radial-gradient(rgb(252, 182, 159), antiquewhite);
-    padding-left: 0;
-    padding-right: 0;
-}
+
 
 
 .main {
