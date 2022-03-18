@@ -4,29 +4,32 @@
   padding: 0;
   box-sizing: border-box; }
 
-.body {
+body {
   font-family: 'Signika Negative', sans-serif;
-  background-color: white;
-  background-image: radial-gradient(#fcb69f, antiquewhite);
+  background-color: blue;
+  background-image: radial-gradient(burlywood, white);
   padding-left: 0;
   padding-right: 0; }
 
 .header {
-  background-color: antiquewhite;
+  background-color: burlywood;
   align-items: center;
   height: auto;
   letter-spacing: 10px; }
   .header .header__titulo {
-    text-align: center;
+    text-align: left;
     font-size: 5vw;
     color: white;
     text-shadow: 2px 2px 5px black;
-    padding-top: 50px; }
-    .header .header__titulo .header__subtitulo {
-      padding: 15px;
-      color: violet;
-      text-shadow: 2px 2px 5px white;
-      text-align: center; }
+    padding-top: 1%;
+    padding-left: 5%; }
+  .header .header__subtitulo {
+    text-align: left;
+    font-size: 2vw;
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    padding-left: 5%;
+    padding-bottom: 1%; }
 
 .nav {
   background-color: antiquewhite;
@@ -43,7 +46,7 @@
       padding: 5px;
       text-align: right;
       border: black solid;
-      background-color: green;
+      background-color: gray;
       border-width: 1px;
       margin: 2px;
       padding: 2px; }
@@ -52,20 +55,6 @@
         font-size: small;
         font-weight: bolder;
         color: white; }
-
-.footer {
-  background-color: antiquewhite;
-  position: static;
-  bottom: 0;
-  width: 100%;
-  height: 15vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly; }
-  .footer .footer__search {
-    position: absolute;
-    padding: 10px;
-    width: 100%; }
 
 .main {
   padding: 5%; }
@@ -88,3 +77,17 @@
       object-fit: cover;
       border-radius: 8px;
       border: 2px solid black; }
+
+.footer {
+  background-color: burlywood;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  .footer .footer__search {
+    position: absolute;
+    padding: 10px;
+    width: 100%; }

@@ -1,19 +1,22 @@
 .header {
-    background-color: antiquewhite;
+    background-color: $base-marron;
     align-items: center;
     height: auto;
     letter-spacing: 10px;
     .header__titulo {
-        text-align: center;
+        text-align: left;
         font-size: 5vw;
         color: white;
         text-shadow: 2px 2px 5px black;
-        padding-top: 50px;
-        .header__subtitulo {
-            padding: 15px;
-            color: violet;
-            text-shadow: 2px 2px 5px white;
-            text-align: center;
+        padding-top: 1%;
+        padding-left: 5%;
         }
-    }
+        .header__subtitulo {
+            text-align: left;
+            font-size: 2vw;
+            color: black;
+            text-shadow: 2px 2px 5px white;
+            padding-left: 5%;
+            padding-bottom:1%;
+        }
 }

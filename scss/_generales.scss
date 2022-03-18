@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     font-family: 'Signika Negative', sans-serif;
-    background-color: white;
-    background-image: radial-gradient(rgb(252, 182, 159), antiquewhite);
+    background-color: blue;
+    background-image: radial-gradient($base-marron, white);
     padding-left: 0;
     padding-right: 0;
 }
