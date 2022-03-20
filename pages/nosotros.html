@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="barra">
+    <div class="barraHeader">
         <header class="header">
             <h1 class="header__titulo">EL CAMPITO</h1>
             <h4 class="header__subtitulo">Guarderia canina</h4>
@@ -37,37 +37,37 @@
     </div>
     
     
-    <main>
-        <h2 class="subtitulo">QUIENES SOMOS? TE INVITAMOS A QUE NOS CONOZCAS</h2>
+    <main class="main">
+        <h2 class="titulo">TE INVITAMOS A QUE NOS CONOZCAS</h2>
 
         <div class="empleados">
             <div class="empleados__perfil">
-                <div class="empleados__individual">
-                    <img class="foto__carnet" src="../images/veronica.jpg" alt="VERONICA CUIDADORA">
+                <div class="foto__individual">
+                    <img class="foto__carnet" width="200" height="300"  src="../images/veronica.jpg" alt="VERONICA CUIDADORA">
                     <p class="foto__boton" for="CV">VERONICA DIAZ (CLICK PARA CV)</p>
                 </div>
             </div>
             <div class="empleados__perfil">
-                <div class="foto__empleado">
-                    <img class="foto__carnet" src="../images/antoni.jpg" alt="ANTONI CUIDADOR">
+                <div class="foto__individual">
+                    <img class="foto__carnet" width="200" height="300"  src="../images/antoni.jpg" alt="ANTONI CUIDADOR">
                     <p class="foto__boton" for="CV">ANTONI DIAZ (CLICK PARA CV)</p>
                 </div>
             </div>
             <div class="empleados__perfil">
-                <div class="foto__empleado">
-                    <img class="foto__carnet" src="../images/patricia.jpg" alt="PATRICIA CUIDADORA">
+                <div class="foto__individual">
+                    <img class="foto__carnet" width="200" height="300"  src="../images/patricia.jpg" alt="PATRICIA CUIDADORA">
                     <p class="foto__boton" for="CV">PATRICIA MARQUEZ (CLICK PARA CV)</p>
                 </div>
             </div>
             <div class="empleados__perfil">
-                <div class="foto__empleado">
-                    <img class="foto__carnet" src="../images/juan.jpg" alt="JUAN CUIDADOR">
+                <div class="foto__individual">
+                    <img class="foto__carnet" width="200" height="300"  src="../images/juan.jpg" alt="JUAN CUIDADOR">
                     <p class="foto__boton" for="CV">JUAN RUIZ (CLICK PARA CV)</p>
                 </div>
             </div>
         </div>
 
-        <h3 class="otroSubtitulo">TAMBIEN TRABAJAN CON NOSOTROS:</h3>
+        <h2 class="titulo">TAMBIEN TRABAJAN CON NOSOTROS:</h2>
 
         <div class="link">
             <div class="link__empresa">
@@ -102,16 +102,21 @@
     </main>
 
     <footer class="footer">
+        <div class="footer__datos">
+            <p>Email: elcampito@gmail.com</p>
+            <p>Telefono: 26001212</p>
+            <p>Celular: 099123456</p>
+        </div>
         <div class="footer__direccion">
-            <h4>DIRECCION</h4>
+            <img src="../images/map.png" alt="linkubicacion">
             <p>Camino al campito 2776</p>
             <p>Montevideo, Uruguay</p> 
         </div>
         <div class="footer__redes">
-            <h4>REDES SOCIALES</h4>
-            <p>facebook</p>
-            <p>instagram</p>
-            <p>twitter</p>
+            <img class="footer__fotos" src="../images/facebook.png" alt="logofacebook">
+            <img class="footer__fotos" src="../images/instagram.png" alt="logoinstagram">
+            <img class="footer__fotos" src="../images/twitter.png" alt="logotwitter">
+            <img class="footer__fotos" src="../images/youtube.png" alt="logoyoutube">
         </div>
         <form class="footer__search">
             <input class="footer__input" type="text" placeholder="Buscar...">

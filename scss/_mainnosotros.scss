@@ -1,0 +1,17 @@
+.empleados {
+    display: grid;
+    background-color: black;
+    .empleados__perfil {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        .foto__individual {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            .foto_carnet {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr ;
+            }
+        }
+    }
+
+}

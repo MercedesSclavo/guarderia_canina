@@ -6,8 +6,20 @@
 
 body {
     font-family: 'Signika Negative', sans-serif;
-    background-color: blue;
-    background-image: radial-gradient($base-marron, white);
+    background-color: rgb(202, 223, 231);
     padding-left: 0;
     padding-right: 0;
 }
+
+.titulo {
+    background-color: $fondo-blanco;
+    font-size: 2vw;
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    text-align: center;
+}
+
+.main {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    }
