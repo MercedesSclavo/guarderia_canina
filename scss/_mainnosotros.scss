@@ -1,17 +1,50 @@
 .empleados {
     display: grid;
-    background-color: black;
-    .empleados__perfil {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-        .foto__individual {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr ;
-            .foto_carnet {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr ;
-            }
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    padding-left: 3%;
+    justify-items: center;
+    column-gap: 2%;
+    .texto__empleados{
+        text-align: center;
         }
+    .texto__curriculum{
+        font-weight: bold;
+        text-align: center;
+        padding: 2%;
     }
-
+    .foto__individual{
+        border: solid 5px white;
+        background-color: $fondo-blanco;
+            .foto__boton{
+                text-align: center;
+                font-weight: bold;
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+    }
 }
+
+.colaboradores{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    .link__empresa{
+        border: solid 5px white;
+        border-radius: 50%;
+        background-color: $fondo-blanco;
+        text-align: center;
+        padding: 2%;
+        &:hover {
+            background-color: black;
+            color: white;
+            }
+    }
+    }

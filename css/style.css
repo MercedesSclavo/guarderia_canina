@@ -89,9 +89,11 @@ body {
     word-spacing: 5px;
     background-color: aliceblue;
     margin: 10%;
-    padding: 2%; }
+    padding: 2%;
+    border: solid 5px white; }
     .grid-main .index-texto:hover {
-      font-weight: bolder; }
+      font-weight: bolder;
+      background-color: white; }
 
 .grid-galeria {
   display: grid;
@@ -113,6 +115,63 @@ body {
   margin-bottom: 5%;
   margin: 5%;
   padding-left: 5%; }
+
+.empleados {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-left: 3%;
+  justify-items: center;
+  column-gap: 2%; }
+  .empleados .texto__empleados {
+    text-align: center; }
+  .empleados .texto__curriculum {
+    font-weight: bold;
+    text-align: center;
+    padding: 2%; }
+  .empleados .foto__individual {
+    border: solid 5px white;
+    background-color: aliceblue; }
+    .empleados .foto__individual .foto__boton {
+      text-align: center;
+      font-weight: bold; }
+      .empleados .foto__individual .foto__boton:hover {
+        background-color: black;
+        color: white; }
+
+.colaboradores {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%; }
+  .colaboradores .link__empresa {
+    border: solid 5px white;
+    border-radius: 50%;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 2%; }
+    .colaboradores .link__empresa:hover {
+      background-color: black;
+      color: white; }
+
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 5%;
+  row-gap: 7%;
+  justify-items: center;
+  padding: 5%; }
+  .servicios .texto {
+    border: solid 5px white;
+    border-radius: 20%;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 2%; }
 
 .footer {
   position: static;

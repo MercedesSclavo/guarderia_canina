@@ -11,8 +11,10 @@
         background-color: $fondo-blanco;
         margin: 10%;
         padding: 2%;
+        border: solid 5px white;
         &:hover {
             font-weight: bolder;
+            background-color: white;
         }
     }
 }
