@@ -1,0 +1,16 @@
+.instalaciones {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 10%;
+    padding-top: 5%;
+    .fotoInstalaciones {
+        width: 73%;
+        background-color: white;
+        margin-bottom: 25px;
+        .contenedor {
+            text-align: center;
+            padding: 10px 20px;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    body{
+        background: orange;
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+    }
+    .header {
+        position: absolute;
+    }
+    .grid-main {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        justify-items: center;
+        width: 800px;
+    }
+
+    .grid-galeria {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 2%;
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+    .video {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr;
+        row-gap: 5%;
+        margin-bottom: 5%;
+        margin: 5%;  
+        padding-left: 10%;
+    }
+
+    .empleados {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 2%;
+        padding-bottom: 5%;
+        padding-right: 2%;
+        padding-left: 3%;
+        justify-items: center;
+        row-gap: 5%;
+    }
+
+    .colaboradores{
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 5%;
+        column-gap: 5%;
+        padding: 5%;
+        .link__empresa{
+            border: solid 5px white;
+            border-radius: 0%;
+            background-color: $fondo-blanco;
+            text-align: center;
+            box-sizing: content-box;
+            width: 100%;
+            &:hover{
+                background-color: $fondo-blanco;
+                color: black;
+            }
+
+        }
+    }
+        
+    .servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        column-gap: 5%;
+        row-gap: 7%;
+        justify-items: normal;
+        padding: 5%;
+    }
+
+    .instalaciones {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding-left: 10%;
+        padding-top: 5%;
+        .fotoInstalaciones {
+            width: 54%;
+            background-color: white;
+            margin-bottom: 25px;
+        }
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+        
+        
+    
+
+}
+@media (max-width: 575.98px)and (orientation:portrait) {
+    body{background: green;}
+}

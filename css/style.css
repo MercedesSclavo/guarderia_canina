@@ -8,7 +8,10 @@ body {
   font-family: 'Signika Negative', sans-serif;
   background-color: #cadfe7;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  min-height: 90vh;
+  min-width: 90vh;
+  overflow-x: hidden; }
 
 .titulo {
   background-color: aliceblue;
@@ -28,12 +31,15 @@ body {
   background-size: cover;
   background-position: center center;
   display: block; }
+  .barraHeader .header__box {
+    width: 75%; }
   .barraHeader .header {
     height: auto;
     letter-spacing: 10px;
     text-align: left;
-    width: 50%;
-    display: inline-block; }
+    width: 35%;
+    display: inline-block;
+    padding-left: 5%; }
     .barraHeader .header .header__titulo {
       text-align: left;
       font-size: 5vw;
@@ -53,7 +59,7 @@ body {
     text-align: right;
     height: auto;
     display: inline-block;
-    width: 50%;
+    width: 65%;
     margin: 10px;
     position: absolute;
     right: 1px; }
@@ -118,19 +124,13 @@ body {
 
 .empleados {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-  padding-top: 5%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 2%;
   padding-bottom: 5%;
   padding-right: 5%;
   padding-left: 3%;
   justify-items: center;
   column-gap: 2%; }
-  .empleados .texto__empleados {
-    text-align: center; }
-  .empleados .texto__curriculum {
-    font-weight: bold;
-    text-align: center;
-    padding: 2%; }
   .empleados .foto__individual {
     border: solid 5px white;
     background-color: aliceblue; }
@@ -173,6 +173,60 @@ body {
     text-align: center;
     padding: 2%; }
 
+.instalaciones {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 10%;
+  padding-top: 5%; }
+  .instalaciones .fotoInstalaciones {
+    width: 73%;
+    background-color: white;
+    margin-bottom: 25px; }
+    .instalaciones .fotoInstalaciones .contenedor {
+      text-align: center;
+      padding: 10px 20px; }
+
+.formulario {
+  padding: 5%; }
+  .formulario input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: aliceblue;
+    color: black; }
+    .formulario input:hover {
+      border: solid black; }
+  .formulario textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: aliceblue; }
+    .formulario textarea:hover {
+      border: solid black; }
+  .formulario .botones {
+    border: black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.2s; }
+    .formulario .botones .boton {
+      background-color: aliceblue;
+      border: black solid;
+      border-width: 2px;
+      color: black; }
+      .formulario .botones .boton:hover {
+        background-color: black;
+        color: white; }
+
 .footer {
   position: static;
   bottom: 0;
@@ -196,3 +250,88 @@ body {
     position: absolute;
     padding: 10px;
     width: 100%; }
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait) {
+  body {
+    background: orange;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0; }
+  .header {
+    position: absolute; }
+  .grid-main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-items: center;
+    width: 800px; }
+  .grid-galeria {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%; }
+  .video {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    row-gap: 5%;
+    margin-bottom: 5%;
+    margin: 5%;
+    padding-left: 10%; }
+  .empleados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-right: 2%;
+    padding-left: 3%;
+    justify-items: center;
+    row-gap: 5%; }
+  .colaboradores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 5%;
+    column-gap: 5%;
+    padding: 5%; }
+    .colaboradores .link__empresa {
+      border: solid 5px white;
+      border-radius: 0%;
+      background-color: aliceblue;
+      text-align: center;
+      box-sizing: content-box;
+      width: 100%; }
+      .colaboradores .link__empresa:hover {
+        background-color: aliceblue;
+        color: black; }
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 7%;
+    justify-items: normal;
+    padding: 5%; }
+  .instalaciones {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-top: 5%; }
+    .instalaciones .fotoInstalaciones {
+      width: 54%;
+      background-color: white;
+      margin-bottom: 25px; }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
+
+@media (max-width: 575.98px) and (orientation: portrait) {
+  body {
+    background: green; } }

@@ -1,0 +1,48 @@
+.formulario{
+    padding: 5%;
+    input{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: $fondo-blanco;
+        color: black;
+        &:hover {
+            border: solid black;
+        }
+    }
+    textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+        background-color: $fondo-blanco;
+        &:hover {
+            border: solid black;
+        }
+    }
+    .botones {
+        border: black;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; 
+        transition-duration: 0.2s;
+        .boton {
+            background-color: $fondo-blanco;
+            border: black solid;
+            border-width: 2px;
+            color: black;
+            &:hover{
+                background-color: black;
+                color: white;
+
+            }
+        }  
+    }
+}
