@@ -83,23 +83,11 @@ body {
           .barraHeader .nav .nav__items .nav__link .nav__links:hover {
             background-color: grey; }
 
-.grid-main {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  justify-items: center; }
-  .grid-main .index-texto {
-    text-align: center;
-    word-spacing: 5px;
-    background-color: aliceblue;
-    margin: 10%;
-    padding: 2%;
-    border: solid 5px white; }
-    .grid-main .index-texto:hover {
-      font-weight: bolder;
-      background-color: white; }
+.servicios__lista {
+  padding: 10px;
+  text-align: left;
+  margin: 15px;
+  position: relative; }
 
 .grid-galeria {
   display: grid;
@@ -158,6 +146,25 @@ body {
       background-color: black;
       color: white; }
 
+.grid-main {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  justify-items: center; }
+  .grid-main .index-texto {
+    text-align: center;
+    word-spacing: 5px;
+    background-color: aliceblue;
+    margin: 10%;
+    padding: 2%;
+    border: solid 5px white; }
+    .grid-main .index-texto:hover {
+      font-weight: bolder;
+      background-color: white; }
+
+/*para borrar*/
 .servicios {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

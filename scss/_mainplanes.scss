@@ -1,0 +1,39 @@
+.grid-main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-items: center;
+    .index-texto{
+        text-align: center;
+        word-spacing: 5px;
+        background-color: $fondo-blanco;
+        margin: 10%;
+        padding: 2%;
+        border: solid 5px white;
+        &:hover {
+            font-weight: bolder;
+            background-color: white;
+        }
+    }
+}
+
+/*para borrar*/
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 7%;
+    justify-items: center;
+    padding: 5%;
+
+    .texto{
+        border: solid 5px white;
+        border-radius: 20%;
+        background-color: $fondo-blanco;
+        text-align: center;
+        padding: 2%;
+    }
+}
