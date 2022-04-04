@@ -10,15 +10,41 @@
     column-gap: 2%;
     .foto__individual {
         border: solid 5px white;
-        background-color: $fondo-blanco;
-            .foto__boton {
-                text-align: center;
-                font-weight: bold;
-                &:hover {
-                    background-color: black;
-                    color: white;
-                }
+        background-color: black;
+        color: white;
+        position: relative;
+        .foto__carnet {
+            opacity: 1;
+            width: 100%;
+            display: block;
+            transition: .5s ease;
+            height: auto;
+            backface-visibility: hidden;
+            &:hover {
+                opacity: 0.3;
             }
+        }
+        .foto__boton {
+            text-align: center;
+            font-weight: bold;
+        }
+        .efecto {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            &:hover {
+                opacity: 1;
+            }
+            .efecto__empleados {
+                background-color: #4CAF50;
+                color: white;
+                font-size: 16px;
+            }
+        }
     }
 }
 
@@ -30,14 +56,14 @@
     padding-left: 2%;
     padding-right: 2%;
     .link__empresa{
-        border: solid 5px white;
+        border: solid 3px black;
         border-radius: 50%;
-        background-color: $fondo-blanco;
         text-align: center;
-        padding: 2%;
+        background-color: white;
+        padding: 1%;
         &:hover {
-            background-color: black;
-            color: white;
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);  
         }
     }
 }

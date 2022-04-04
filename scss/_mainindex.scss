@@ -1,13 +1,25 @@
+/*LISTADO RESUMEN DE LO QUE OFRECEMOS*/
 .servicios__lista {
-    padding: 10px;
+    padding: 2%;
+    margin-left: 5%;
     text-align: left;
-    margin: 15px;
     position: relative;
+    .servicios__ul {
+        list-style: circle;
+        .servicios__li {
+            line-height: 2.5;
+            .servicios__a {
+                font-size: small;
+                font-weight: bold;
+            }
+        }
+    }
+    
 }
 
 
 
-
+/*GALERIA DE FOTOS*/
 .grid-galeria {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -23,6 +35,8 @@
         padding-top: 10%;
     }
 }
+
+/*GALERIA DE VIDEOS*/
 .video{
     display: grid;
     grid-template-columns: 2fr 2fr;

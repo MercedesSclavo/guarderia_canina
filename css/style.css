@@ -83,12 +83,21 @@ body {
           .barraHeader .nav .nav__items .nav__link .nav__links:hover {
             background-color: grey; }
 
+/*LISTADO RESUMEN DE LO QUE OFRECEMOS*/
 .servicios__lista {
-  padding: 10px;
+  padding: 2%;
+  margin-left: 5%;
   text-align: left;
-  margin: 15px;
   position: relative; }
+  .servicios__lista .servicios__ul {
+    list-style: circle; }
+    .servicios__lista .servicios__ul .servicios__li {
+      line-height: 2.5; }
+      .servicios__lista .servicios__ul .servicios__li .servicios__a {
+        font-size: small;
+        font-weight: bold; }
 
+/*GALERIA DE FOTOS*/
 .grid-galeria {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -103,6 +112,7 @@ body {
     object-fit: cover;
     padding-top: 10%; }
 
+/*GALERIA DE VIDEOS*/
 .video {
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -121,13 +131,35 @@ body {
   column-gap: 2%; }
   .empleados .foto__individual {
     border: solid 5px white;
-    background-color: aliceblue; }
+    background-color: black;
+    color: white;
+    position: relative; }
+    .empleados .foto__individual .foto__carnet {
+      opacity: 1;
+      width: 100%;
+      display: block;
+      transition: .5s ease;
+      height: auto;
+      backface-visibility: hidden; }
+      .empleados .foto__individual .foto__carnet:hover {
+        opacity: 0.3; }
     .empleados .foto__individual .foto__boton {
       text-align: center;
       font-weight: bold; }
-      .empleados .foto__individual .foto__boton:hover {
-        background-color: black;
-        color: white; }
+    .empleados .foto__individual .efecto {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%); }
+      .empleados .foto__individual .efecto:hover {
+        opacity: 1; }
+      .empleados .foto__individual .efecto .efecto__empleados {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px; }
 
 .colaboradores {
   display: flex;
@@ -137,14 +169,14 @@ body {
   padding-left: 2%;
   padding-right: 2%; }
   .colaboradores .link__empresa {
-    border: solid 5px white;
+    border: solid 3px black;
     border-radius: 50%;
-    background-color: aliceblue;
     text-align: center;
-    padding: 2%; }
+    background-color: white;
+    padding: 1%; }
     .colaboradores .link__empresa:hover {
-      background-color: black;
-      color: white; }
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5); }
 
 .grid-main {
   display: grid;
