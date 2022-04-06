@@ -10,6 +10,7 @@
         display: block;
     }
 
+    
     .grid-main {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
@@ -68,7 +69,6 @@
                 background-color: $fondo-blanco;
                 color: black;
             }
-
         }
     }
         
@@ -103,8 +103,10 @@
         
         
     
-
 }
+
 @media (max-width: 768px)and (orientation:portrait) {
-    body{background: green;}
+    body{
+        background: green;
+    }
 }

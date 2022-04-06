@@ -9,24 +9,22 @@
     justify-items: center;
     column-gap: 2%;
     .foto__individual {
-        border: solid 5px white;
-        background-color: black;
-        color: white;
+        background-color: $fondo-blanco;
+        color: black;
         position: relative;
         .foto__carnet {
+            border: solid 5px white;
             opacity: 1;
             width: 100%;
             display: block;
             transition: .5s ease;
             height: auto;
             backface-visibility: hidden;
-            &:hover {
-                opacity: 0.3;
-            }
         }
         .foto__boton {
             text-align: center;
             font-weight: bold;
+            padding-top: 2%;
         }
         .efecto {
             transition: .5s ease;
@@ -36,14 +34,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
-            &:hover {
-                opacity: 1;
-            }
-            .efecto__empleados {
-                background-color: #4CAF50;
-                color: white;
-                font-size: 16px;
-            }
         }
     }
 }
