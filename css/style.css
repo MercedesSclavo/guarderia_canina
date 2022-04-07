@@ -10,7 +10,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   min-height: 90vh;
-  min-width: 9gi0vh;
+  min-width: 90vh;
   overflow-x: hidden; }
 
 .titulo {
@@ -34,44 +34,24 @@ body {
   background-size: cover;
   background-position: center center;
   padding: 12px; }
-  .barraHeader .header {
-    height: auto;
-    letter-spacing: 10px;
-    text-align: left;
-    display: inline-block; }
-    .barraHeader .header .header__titulo {
-      text-align: left;
-      font-size: 5vw;
-      color: white;
-      text-shadow: 2px 2px 5px black;
-      padding-top: 1%;
-      padding-left: 1%; }
-    .barraHeader .header .header__subtitulo {
-      font-size: 1.3vw;
-      text-align: left;
-      text-shadow: 2px 2px 5px aliceblue;
-      color: black;
-      padding-bottom: 1%;
-      padding-left: 5%; }
   .barraHeader .nav {
     display: flex;
-    padding-top: 50px;
+    padding-top: 1px;
     text-align: right;
     height: auto;
     margin: 10px;
-    right: 1px;
-    padding-top: 5%; }
+    right: 1px; }
     .barraHeader .nav .nav__items {
       text-align: center;
       list-style: none;
       width: 100%;
-      padding-top: 10%;
-      bottom: 0; }
+      padding-top: 1%;
+      bottom: -1em; }
       .barraHeader .nav .nav__items .nav__link {
         display: inline-block; }
         .barraHeader .nav .nav__items .nav__link .nav__links {
           text-decoration: none;
-          font-size: large;
+          font-size: small;
           font-weight: bolder;
           color: black;
           border: solid;
@@ -82,6 +62,25 @@ body {
           margin: 5px; }
           .barraHeader .nav .nav__items .nav__link .nav__links:hover {
             background-color: grey; }
+  .barraHeader .header {
+    height: auto;
+    letter-spacing: 10px;
+    text-align: left;
+    display: inline-block; }
+    .barraHeader .header .header__titulo {
+      text-align: left;
+      font-size: 7vw;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+      padding-top: 7%;
+      padding-left: 1%; }
+    .barraHeader .header .header__subtitulo {
+      font-size: 1.3vw;
+      text-align: left;
+      text-shadow: 2px 2px 5px aliceblue;
+      color: white;
+      padding-bottom: 1%;
+      padding-left: 5%; }
 
 /*LISTADO RESUMEN DE LO QUE OFRECEMOS*/
 .servicios__lista {
@@ -102,15 +101,18 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 10px;
+  column-gap: 2%;
   row-gap: 1%;
   padding-left: 5%;
   padding-bottom: 3%;
-  padding-top: 3%; }
+  padding-top: 3%;
+  width: 1500px; }
   .grid-galeria .grid-fotos {
     height: 90%;
     object-fit: cover;
-    padding-top: 10%; }
+    padding-top: 10%;
+    max-width: 100%;
+    max-height: 100%; }
 
 /*GALERIA DE VIDEOS*/
 .video {
@@ -119,6 +121,9 @@ body {
   margin-bottom: 5%;
   margin: 5%;
   padding-left: 5%; }
+  .video .video__video {
+    width: 560px;
+    height: 315px; }
 
 .empleados {
   display: grid;
@@ -244,110 +249,197 @@ body {
         color: white; }
 
 .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   position: static;
   bottom: 0;
   width: 100%;
   height: 15vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  column-gap: 2%;
+  padding-top: 2%;
   background-color: black;
   color: white;
   font-size: small; }
+  .footer .footer__datos {
+    padding-left: 10%; }
   .footer .footer__redes {
     display: inline-block;
-    right: 5%;
-    position: absolute; }
+    right: 5%; }
     .footer .footer__redes .footer__fotos {
       padding: 5px; }
       .footer .footer__redes .footer__fotos:hover {
         transform: scale(1.5); }
-  .footer .footer__search {
-    position: absolute;
-    padding: 10px;
-    width: 100%; }
 
-@media (min-width: 480px) and (max-width: 991.98px) and (orientation: portrait) {
+@media (max-width: 480px) {
   body {
-    background: orange;
     width: 100%;
     overflow-x: hidden;
-    margin: 0; }
-  .header {
-    display: block; }
-  .grid-main {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    justify-items: center;
-    width: 800px; }
-  .grid-galeria {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 2%;
-    padding-bottom: 3%;
-    padding-top: 3%; }
-  .video {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr;
-    row-gap: 5%;
-    margin-bottom: 5%;
-    margin: 5%;
-    padding-left: 10%; }
-  .empleados {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding-top: 2%;
-    padding-bottom: 5%;
-    padding-right: 2%;
-    padding-left: 3%;
-    justify-items: center;
-    row-gap: 5%; }
-  .colaboradores {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 5%;
-    column-gap: 5%;
-    padding: 5%; }
-    .colaboradores .link__empresa {
-      border: solid 5px white;
-      border-radius: 0%;
-      background-color: aliceblue;
-      text-align: center;
-      box-sizing: content-box;
-      width: 100%; }
-      .colaboradores .link__empresa:hover {
-        background-color: aliceblue;
-        color: black; }
-  .servicios {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    column-gap: 5%;
-    row-gap: 7%;
-    justify-items: normal;
-    padding: 5%; }
-  .instalaciones {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding-left: 10%;
-    padding-top: 5%; }
-    .instalaciones .fotoInstalaciones {
-      width: 54%;
-      background-color: white;
-      margin-bottom: 25px; }
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; } }
+    margin: 0;
+    /*index*/
+    /*nosotros*/
+    /*planes*/
+    /*instalaciones*/
+    /*footer*/ }
+    body .header {
+      display: block; }
+    body .grid-galeria {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      width: fit-content;
+      row-gap: 1%;
+      padding-left: 20%; }
+      body .grid-galeria .grid-contenedor {
+        padding-right: 5%; }
+    body .video {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      row-gap: 5%;
+      padding-left: 25%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin: 0%; }
+    body .empleados {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 2%;
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-top: 15%;
+      padding-bottom: 35%; }
+    body .colaboradores {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-bottom: 5%;
+      row-gap: 10%;
+      column-gap: 2%; }
+      body .colaboradores .link__empresa {
+        border-radius: 0%; }
+    body .servicios {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      column-gap: 5%;
+      row-gap: 7%;
+      justify-items: normal;
+      padding: 5%; }
+    body .instalaciones {
+      display: grid;
+      grid-template-columns: 2fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      padding-left: 30%;
+      padding-top: 5%; }
+      body .instalaciones .fotoInstalaciones {
+        width: 62%;
+        background-color: white;
+        margin-bottom: 25px; }
+    body .footer {
+      height: 10vh;
+      padding-top: 5%; } }
 
-@media (max-width: 768px) and (orientation: portrait) {
+@media (min-width: 480px) and (max-width: 768px) {
   body {
-    background: green; } }
+    /*index*/
+    /*nosotros*/
+    /*planes*/
+    /*instalacioness*/
+    /*footer*/ }
+    body .grid-galeria {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      width: fit-content;
+      row-gap: 1%;
+      padding-left: 20%; }
+      body .grid-galeria .grid-contenedor {
+        padding-right: 5%; }
+    body .video {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      row-gap: 5%;
+      padding-left: 25%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin: 0%; }
+    body .empleados {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 2%; }
+    body .colaboradores {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      padding: 5%;
+      row-gap: 2%;
+      column-gap: 2%; }
+      body .colaboradores .link__empresa {
+        border-radius: 0%; }
+    body .grid__main {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      padding-top: 2%;
+      padding-bottom: 2%; }
+    body .instalaciones {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      padding-top: 5%;
+      padding-left: 25%;
+      padding-right: 10%; }
+      body .instalaciones .fotoInstalaciones {
+        width: 67%;
+        background-color: white;
+        margin-bottom: 25px; }
+    body .footer {
+      height: 10vh;
+      padding-top: 5%;
+      column-gap: 1%; }
+      body .footer .footer__redes {
+        right: 1%; }
+        body .footer .footer__redes .footer__fotos {
+          padding: 1px; } }
+
+@media (min-width: 768px) and (max-width: 1330px) {
+  body {
+    /*index*/
+    /*instalaciones*/
+    /*footer*/ }
+    body .grid-galeria {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 2fr;
+      width: fit-content;
+      row-gap: 1%;
+      column-gap: 3%;
+      padding-left: 10%; }
+      body .grid-galeria .grid-contenedor {
+        padding-right: 5%; }
+    body .video {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      row-gap: 5%;
+      padding-left: 25%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin: 0%; }
+    body .instalaciones {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 5%;
+      row-gap: 2%;
+      column-gap: 7%; }
+      body .instalaciones .fotoInstalaciones {
+        width: 100%; }
+    body .footer {
+      height: 10vh;
+      padding-top: 5%; } }
